@@ -4,8 +4,6 @@ if (flavorsInput) {
   flavors = flavorsInput.split(",");
 }
 
-console.log(flavors);
-
 function takeOrder(order) {
   let flavorObject = {};
 
@@ -15,7 +13,6 @@ function takeOrder(order) {
       flavorObject[flavorTemp] += 1;
     } else {
       flavorObject[flavorTemp] = 1;
-      console.log(flavorTemp);
     }
   }
   console.table(flavorObject);
